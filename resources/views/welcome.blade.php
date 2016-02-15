@@ -14,29 +14,12 @@
         @else
         <?php $user = Auth::user(); ?>
         <div class="middle-valign left-absolute-align">
+            <h5>test branch</h5>
             <h5 class="left-align"><a class="white-text" href="{{ url('user', ['id' => $user->id])}}">{{$user->name}}</a></h5>
             <h5 class="left-align"><a class="white-text" href="{{ url('auth/logout')}}"> LogOut </a></h5>
         </div>
         @endif
     </div>
-<!--    <div class="col s12 m12 l12 banner valign-wrapper">-->
-<!--        <div class="valign">-->
-<!--            <h5 class="right-align">This should be vertically aligned</h5>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col s12 m6 l3 offset-m6 offset-l9 left-panel valign-wrapper">-->
-<!--                @if(Auth::guest())-->
-<!--                    @include('auth.login')-->
-<!--                @else-->
-<!--                    --><?php //$user = Auth::user(); ?>
-<!--                    <div class="valign">-->
-<!--                        <h5 class="left-align"><a class="white-text" href="{{ url('user', ['id' => $user->id])}}">{{$user->name}}</a></h5>-->
-<!--                        <h5 class="left-align"><a class="white-text" href="{{ url('auth/logout')}}"> LogOut </a></h5>-->
-<!--                    </div>-->
-<!--                @endif-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
 </div>
 <div class="container">
     <div class="row">
