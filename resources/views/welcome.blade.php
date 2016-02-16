@@ -14,6 +14,7 @@
         @else
         <?php $user = Auth::user(); ?>
         <div class="middle-valign left-absolute-align">
+            <h5>setferger MASTER will have conflict</h5>
             <h5 class="left-align"><a class="white-text" href="{{ url('user', ['id' => $user->id])}}">{{$user->name}}</a></h5>
             <h5 class="left-align"><a class="white-text" href="{{ url('auth/logout')}}"> LogOut </a></h5>
         </div>
